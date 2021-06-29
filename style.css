@@ -1,0 +1,18 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.jumbotron{
+    text-align: center;
+}
+i{
+    color: white;
+}
+.saveBtn {
+background-color: blue;
+padding-right: auto;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+/* .description{
+
+} */
