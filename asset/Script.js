@@ -1,3 +1,4 @@
+// sets up time and date
 function currentTime() {
 var time = moment().format("dddd, MMM Do, hh:mm:ss");
 $("#currentDay" ).text(time);
@@ -14,7 +15,7 @@ $(document).ready(function() {
       localStorage.setItem(time, value);
     });
 });
-
+// sets up time blocks
 var currentHour = parseInt(moment().format('H'))
 $('.colorcode').each(function(){
     var val = parseInt($(this).prop('id'));
@@ -29,7 +30,8 @@ $('.colorcode').each(function(){
     }
       console.log(currentHour)
 });
-$("#hour9 .description").val(localStorage.getItem("9"));
+// gets the saved item. 
+$("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
 $("#11 .description").val(localStorage.getItem("11"));
 $("#12 .description").val(localStorage.getItem("12"));
@@ -40,5 +42,5 @@ $("#16 .description").val(localStorage.getItem("16"));
 $("#17 .description").val(localStorage.getItem("17"));
 
 
-
+// keeps the time updated
  setInterval(currentTime, 1000);
